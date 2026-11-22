@@ -1,0 +1,18 @@
+{{ define "posts" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<link rel="stylesheet" href="/xxx/index.css">
+	posts/index.tmpl
+	<h1>Hello, Gin!</h1>
+    {{ . }}
+    <br>
+    <p>{{ .Name | safe }}</p>
+</body>
+</html>
+{{ end }}
